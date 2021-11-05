@@ -5,18 +5,33 @@
 
 @import "header"
 @import "footer"
+@import "home/home"
 
 @import "components"
 @import "sections/sections"
 @media only screen and (max-width: 1920px)
   .container
     max-width: 1172px
+  .inactive
+    display: block
+@media only screen and (max-width: 1919px)
+  .inactive
+    display: none
+  .instagram
+    &-photos
+      justify-content: space-around
 @media only screen and (max-width: 1599px)
   .container
     max-width: 976px
 @media only screen and (max-width: 1399px)
   .container
     max-width: 854px
+  .header
+    &-icons
+      display: none
+    &-burger
+      display: block
+
 @media only screen and (max-width: 1199px)
   .container
     max-width: 732px
@@ -29,62 +44,18 @@
 @media only screen and (max-width: 575px)
   .container
     max-width: 351px
+
 .header
-  height: 950px
   &-main
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/header/background.png")
-  &-row
-    font-family: 'Poppins', sans-serif
-    font-style: normal
-    font-weight: 300
-    font-size: 18px
-    display: flex
-    align-items: center
-  &--hr
-    border: 1px solid rgba(255,255,255,0.7)
-  &-references
-    display: flex
-    justify-content: space-between
+    background-size: cover
 
-.search
-  &-input
-    width: 100%
-    height: 53px
-    border-radius: 100px
-.icons
-  display: flex
-  justify-content: flex-end
 .menu
   margin: 0 auto
   font-family: 'Poppins', sans-serif
   font-size: 20px
   color: #fff
-.header
-  &-title
-    text-align: center
-    padding-top: 223px
-    margin: 0 auto
-    font-size: 75px
-    font-weight: 700
-    font-family: 'Poppins', sans-serif
-    color: #fff
-  &-description
-    text-align: center
-    padding-top: 28px
-    margin: 0 auto
-    font-family: 'Poppins', sans-serif
-    font-weight: 400
-    font-size: 15px
-    color: #fff
-  &-subtitle
-    text-align: center
-    padding-top: 28px
-    margin: 0 auto
-    font-family: 'Poppins', sans-serif
-    font-style: normal
-    font-weight: 700
-    font-size: 36px
-    color: #FFA902
+
 .content
   &-title
     padding-top: 100px
@@ -93,15 +64,6 @@
     font-family: 'Poppins', sans-serif
     font-weight: 600
     font-size: 36px
-.category
-  &-title
-    position: relative
-    top: 50%
-    font-family: 'Poppins', sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 18px
-    color: #fff
 .swiper
   height: 300px
 .position-relative
@@ -131,250 +93,10 @@
 .swiper-pagination-bullet
   width: 18px
   height: 18px
-.explores
-  padding-top: 50px
-  &-text
-    margin: 26px 25px
-    max-width: 320px
-    &-footer
-      display: flex
-      align-items: baseline
-  &-title
-    font-family: 'Poppins', sans-serif
-    font-size: 18px
-    font-weight: 600
-    color: black
-  &-context
-    font-family: 'Poppins', sans-serif
-    font-size: 15px
-    font-weight: 400
-    color: #868383
-  &-category
-    font-family: "Poppins", sans-serif
-    font-weight: 500
-    font-size: 14px
-    color: #FFA902
-    text-decoration: underline
-  &-by
-    padding-top: 10px
-    padding-bottom: 10px
-    font-family: "Poppins", sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 14px
-    color: #696969
-  &-author
-    font-family: "Poppins", sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 14px
-    color: #141414
-  &-pagination-prev
-    transform: scale(-1, 1)
-.page
-  &-link
-    border: none
-    color: #141414
-    font-family: "Poppins", sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 24px
-    &:hover
-      color: #FFA902
-      opacity: 0.7
-    &-current
-      color: #FFA902
+
 .pagination
   padding-top: 50px
 
-
-.footer
-  font-family: "Poppins", sans-serif
-  color: #fff
-  font-size: 24px
-  &-menu
-    max-width: 516px
-  &-items
-    display: flex
-    align-items: center
-    justify-content: space-between
-    width: 100%
-    background: #FFA902
-    padding-top: 61px
-    padding-left: 30px
-    padding-right: 47px
-    padding-bottom: 47px
-.blog
-  &-img
-    width: 100%
-  &-hr
-    margin-left: 6px
-    margin-right: 9px
-    width: 31px
-    border: 1px solid #868383
-  &-title
-    font-family: Poppins, sans-serif
-    font-weight: 600
-    font-size: 18px
-    color: #141414
-  &-author
-    padding-top: 12px
-  &-data
-    padding-top: 12px
-    display: flex
-    align-items: center
-  &-date
-    font-family: Poppins, sans-serif
-    font-weight: 400
-    font-size: 12px
-    color: #868383
-  &-comments
-    &-ref
-      font-family: Poppins, sans-serif
-      font-size: 12px
-      font-weight: 400
-      color: #FFA902
-  &-text
-    padding-top: 19px
-    color: #868383
-    font-family: Poppins, sans-serif
-    font-size: 14px
-    font-weight: 400
-  &-more
-    &-ref
-      padding-top: 20px
-      font-family: Poppins, sans-serif
-      font-weight: 500
-      font-size: 12px
-      color: #FFA902
-  &-author
-    display: flex
-    justify-content: space-between
-    max-width: 128px
-  &-post
-    color: #FFA902
-    text-decoration: underline
-    font-family: Poppins, sans-serif
-    font-size: 12px
-    font-weight: 500
-  &-by
-    color: #868383
-    font-family: Poppins, sans-serif
-    font-size: 12px
-    font-weight: 500
-  &-sign
-    color: #141414
-    font-family: Poppins, sans-serif
-    font-size: 12px
-    font-weight: 500
-  &-sidebar
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1)
-    border-radius: 10px
-    padding: 24px 17px 25px 22px
-  &-icons
-    margin-top: 25px
-.sidebar
-  &-icons
-    padding-top: 12px
-    display: flex
-    justify-content: space-between
-    max-width: 225px
-  &-img
-    max-width: 86px
-    height: 62px
-  &-title
-    color: #141414
-    font-family: Poppins, sans-serif
-    font-size: 18px
-    font-weight: 700
-  &-post
-    display: flex
-    justify-content: space-between
-  &-title
-    font-family: Poppins, sans-serif
-    font-size: 16px
-    font-weight: 600
-    color: #141414
-  &-post
-    padding-top: 20px
-.post
-  &-text
-    padding-left: 13px
-  &-title
-    font-family: Poppins, sans-serif
-    font-size: 15px
-    font-weight: 600
-    color: #141414
-  &-post
-    font-family: Poppins, sans-serif
-    font-size: 6px
-    font-weight: 500
-    color: #FFA902
-    text-decoration: underline
-  &-author
-    display: flex
-    justify-content: space-between
-    max-width: 65px
-  &-by
-    font-family: Poppins, sans-serif
-    font-size: 6px
-    font-weight: 500
-    color: #696969
-  &-sign
-    font-family: Poppins, sans-serif
-    font-size: 6px
-    font-weight: 400
-    color: #141414
-  &-data
-    display: flex
-    max-width: 94px
-    align-items: center
-    justify-content: space-between
-  &-date
-    font-family: Poppins, sans-serif
-    font-size: 6px
-    font-weight: 400
-    color: #868383
-  &-hr
-    width: 11px
-    background-color: #868383
-
-  &-comments
-    font-family: Poppins, sans-serif
-    font-size: 6px
-    font-weight: 400
-    color: #FFA902
-.video
-  max-height: 794px
-  background: url("../img/home/video/background.png")
-  &-content
-    margin: 0 auto
-  &-title
-    padding-top: 192px
-    text-align: center
-    font-family: Poppins, sans-serif
-    font-size: 36px
-    font-weight: 600
-    color: #FFF
-  &-description
-    padding-top: 33px
-    margin: 0 auto
-    max-width: 712px
-    text-align: center
-    font-family: Poppins, sans-serif
-    font-size: 15px
-    font-weight: 400
-    color: #FFF
-  &-button
-    padding-top: 77px
-  &-subtitle
-    padding-bottom: 153px
-    padding-top: 11px
-    text-align: center
-    font-family: Poppins, sans-serif
-    font-size: 36px
-    font-weight: 500
-    color: #FFF
 
 
 
