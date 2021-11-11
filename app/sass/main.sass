@@ -9,46 +9,27 @@
 
 @import "components"
 @import "sections/sections"
-@media only screen and (max-width: 1920px)
-  .container
-    max-width: 1172px
-  .inactive
-    display: block
-@media only screen and (max-width: 1919px)
-  .inactive
-    display: none
-  .instagram
-    &-photos
-      justify-content: space-around
-@media only screen and (max-width: 1599px)
-  .container
-    max-width: 976px
-@media only screen and (max-width: 1399px)
-  .container
-    max-width: 854px
-  .header
-    &-icons
-      display: none
-    &-burger
-      display: block
 
-@media only screen and (max-width: 1199px)
-  .container
-    max-width: 732px
-@media only screen and (max-width: 991px)
-  .container
-    max-width: 605px
-@media only screen and (max-width: 767px)
-  .container
-    max-width: 468px
-@media only screen and (max-width: 575px)
-  .container
-    max-width: 351px
-
-.header
-  &-main
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/header/background.png")
-    background-size: cover
+a
+  color: #fff
+.background
+  height: 100vh
+  width: 100%
+  position: absolute
+  z-index: -3
+  &-gradient
+    height: 100vh
+    width: 100%
+    position: absolute
+    z-index: -1
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))
+  img
+    z-index: -2
+    height: 100%
+    width: 100%
+    object-fit: cover
+.top
+  height: 100vh
 
 .menu
   margin: 0 auto
@@ -93,11 +74,77 @@
 .swiper-pagination-bullet
   width: 18px
   height: 18px
-
+.slider
+  &-card
+    cursor: pointer
+  &-img
+    position: relative
+    width: 100%
+    height: 221px
+    img
+      border-radius: 25px
+      height: 100%
+      width: 100%
+      object-fit: cover
 .pagination
   padding-top: 50px
 
+@media only screen and (max-width: 1920px)
+  .container
+    max-width: 1172px
+  .inactive
+    display: block
+@media only screen and (max-width: 1919px)
 
+  .instagram
+    &-inactive
+      display: none
+    &-photos
+      justify-content: space-around
+@media only screen and (max-width: 1599px)
+  .container
+    max-width: 976px
+@media only screen and (max-width: 1399px)
+  //.explores
+    &-title
+      font-size: 14px
+    &-context
+      font-size: 12px
+    &-category
+      font-size: 11px
+  .container
+    max-width: 854px
+
+@media only screen and (max-width: 1199px)
+  //.explores
+    &-title
+      font-size: 12px
+    &-context
+      font-size: 10px
+    &-category
+      font-size: 9px
+  .container
+    max-width: 732px
+@media only screen and (max-width: 991px)
+
+  .swiper-button-next, .swiper-button-prev
+    display: none
+  //.explores
+    &-title
+      font-size: 10px
+    &-context
+      font-size: 8px
+    &-category
+      font-size: 7px
+  .container
+    max-width: 605px
+@media only screen and (max-width: 767px)
+  .container
+    max-width: 468px
+
+@media only screen and (max-width: 575px)
+  .container
+    max-width: 351px
 
 
 

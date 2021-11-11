@@ -1,12 +1,17 @@
 .sidebar
+  &-card
+    cursor: pointer
+    position: relative
+    width: 100%
+    height: 62px
+    img
+      height: 100%
+      object-fit: cover
   &-icons
     padding-top: 12px
     display: flex
     justify-content: space-between
     max-width: 225px
-  &-img
-    max-width: 86px
-    height: 62px
   &-title
     color: #141414
     font-family: Poppins, sans-serif
@@ -22,3 +27,25 @@
     color: #141414
   &-post
     padding-top: 20px
+@media only screen and (max-width: 1920px)
+  .sidebar
+@media only screen and (max-width: 1399px)
+  .sidebar
+@media only screen and (max-width: 1199px)
+  .sidebar
+    &-post
+      display: block
+    &-icons
+      display: block
+@media only screen and (max-width: 991px)
+  .sidebar
+@media only screen and (max-width: 767px)
+  .sidebar
+    &-title
+      text-align: center
+    &-icons
+      margin: 0 auto
+      display: flex
+      flex-wrap: wrap
+@media only screen and (max-width: 575px)
+  .sidebar
