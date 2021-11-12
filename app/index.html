@@ -662,13 +662,20 @@
         </div>
       </div>
     </div>
-  <div class="video">
-    <div id="video1" class="video-container">
-      <button id="close-video1" class="close-video-btn"><i class="fas fa-times fa-2x"></i></button>
-      <video class="video-video" controls="controls" poster="video/home/airpods-preview.jpg">
-        <source src="video/home/Airpods%20(Not%20For%20Poor%20People).mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-      </video>
+  <div class="video-background">
+    <img src="video/home/airpods-preview.jpg" alt="">
+  </div>
+  <div class="video-file">
+    <video id="home-video1" controls>
+      <source src="video/home/Airpods%20(Not%20For%20Poor%20People).mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+    <div class="video-btn">
+      <button class="video-close" type="button"><i class="fas fa-times fa-2x"></i></button>
     </div>
+  </div>
+
+  <div class="video">
+      <button id="close-video1" class="close-video-btn"><i class="fas fa-times fa-2x"></i></button>
       <div class="container">
         <div class="video-content">
           <div class="video-title">Trips For your first solo traveling</div>
@@ -704,9 +711,9 @@
      <div class="footer-items">
        <div class="footer-left">
          <div class="footer-copyright">
-           <img src="img/footer/copyright.png" alt="">
+           <i class="far fa-copyright"></i>
+           2020 ojjomedia All Right Reserved
          </div>
-         <div>2020 ojjomedia All Right Reserved</div>
        </div>
        <div class="footer-right">
          <menu class="menu">

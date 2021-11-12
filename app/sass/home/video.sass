@@ -1,16 +1,50 @@
 
 .close-video-btn
+  display: none
+  z-index: 100000
   color: #FFFFFF
   position: relative
   bottom: 120px
   left: 442px
 .video
-  max-height: 794px
-  background: url("../../img/home/video/background.png")
+  height: 794px
+  &-background
+    opacity: 1
+    position: absolute
+    z-index: -2
+    width: 100%
+    height: 794px
+    img
+      z-index: -9
+      height: 100%
+      width: 100%
+      object-fit: cover
+  &-btn
+    z-index: -1
+  &-close
+    top: 0
+    opacity: 0
+    left: 96%
+    position: absolute
+  &-file
+    opacity: 0
+    z-index: -1
+    position: absolute
+    width: 100%
+    height: 794px
+    video
+      width: 100%
+      height: 100%
+      object-fit: cover
   &-video
-    width: 426px
-    height: 320px
+    opacity: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+
+
   &-content
+    opacity: 1
     justify-items: flex-end
   &-title
     padding-top: 192px
@@ -19,16 +53,7 @@
     font-size: 36px
     font-weight: 600
     color: #FFF
-  &-container
-    z-index: 999
-    position: fixed /* Фиксированное положение */
-    top: 0px
-    display: none
-    justify-content: center
-    align-items: center
-    width: 100vw
-    height: 100vh
-    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4))
+
   &-description
     padding-top: 33px
     margin: 0 auto
@@ -58,3 +83,48 @@
     font-size: 36px
     font-weight: 500
     color: #FFF
+@media only screen and (max-width: 1920px)
+  .video
+@media only screen and (max-width: 1399px)
+  .video
+@media only screen and (max-width: 1199px)
+  .video
+@media only screen and (max-width: 991px)
+  .video
+    &-title
+      padding-top: 100px
+      font-size: 30px
+    &-description
+      font-size: 12px
+    &-icon
+      width: 51px
+      height: 51px
+      i
+        font-size: 1.4em
+    &-subtitle
+      padding-bottom: 85px
+      font-size: 30px
+    &-close
+      left: 93%
+@media only screen and (max-width: 767px)
+  .video
+@media only screen and (max-width: 545px)
+  .video
+@media only screen and (max-width: 500px)
+  .close-video-btn
+    left: 337px
+    bottom: 90px
+  .video
+    &-video
+      width: 320px
+      height: 240px
+    &-close
+      left: 90%
+@media only screen and (max-width: 400px)
+  .close-video-btn
+    left: 257px
+    bottom: 70px
+  .video
+    &-video
+      width: 240px
+      height: 160px

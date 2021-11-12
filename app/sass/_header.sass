@@ -112,6 +112,7 @@
 		max-width: 195px
 		padding-top: 28px
 		margin: 0 auto
+		text-align: center
 		font-family: 'Poppins', sans-serif
 		font-style: normal
 		font-weight: 700
@@ -174,20 +175,41 @@
 
 @media only screen and (max-width: 991px)
 	.header
+		&-logo
+			margin: 0
 		&-search
 			display: none
 		&-title
+			font-size: 50px
 			padding-top: 80px
+		&-description
+			font-size: 14px
+		&-subtitle
+			font-size: 30px
 @media only screen and (max-width: 767px)
 	.header
-		&-logo
-			margin: 0 auto
 		&-other
 			padding-top: 20px
 		&-row
-			display: block
+			display: flex
 		&-search
 			width: 400px
 
 @media only screen and (max-width: 575px)
 	.header
+		&-title
+			font-size: 36px
+			padding-top: 80px
+		&-description
+			font-size: 12px
+		&-subtitle
+			font-size: 24px
+@media only screen and (max-width: 480px)
+	.header
+		&-title
+			font-size: 30px
+			padding-top: 80px
+		&-description
+			font-size: 10px
+		&-subtitle
+			font-size: 18px
