@@ -1,19 +1,3 @@
-// let videoBlock = document.getElementById('video1');
-// let video1 = document.getElementsByClassName('video-video');
-// function playVideo(){
-// 	videoBlock.style.display = 'flex';
-// }
-// function closeVideo() {
-// 	videoBlock.style.display = 'none'
-// 	video1[0].pause();
-// }
-//
-//
-// let playButton = document.getElementById('play1');
-// playButton.addEventListener('click', playVideo)
-// let closeButton = document.getElementById('close-video1');
-// closeButton.addEventListener('click', closeVideo);
-
 $(document).ready(function (){
 	let video1 = $('#home-video1')[0];
 	let videoFile = $('.video-file');
