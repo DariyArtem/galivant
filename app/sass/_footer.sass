@@ -1,8 +1,14 @@
 .footer
+	background: #FFA902
+	width: 100%
 	font-family: "Poppins", sans-serif
 	color: #fff
 	font-size: 24px
-	padding-top: 101px
+	margin-top: 101px
+	&-menu
+		font-family: Poppins,sans-serif
+		font-size: 20px
+		color: #fff
 	&-icons
 		width: 189px
 		display: flex
@@ -25,23 +31,18 @@
 			background: #FFFFFF
 			.icon
 				color: #FFA902
-	&-left
-		align-items: baseline
-		display: flex
-	&-right
-		display: flex
 	&-copyright
+		width: 500px
 	&-references
-		margin: 0 auto
+		width: 516px
 		display: flex
 		justify-content: space-between
-		width: 516px
 	&-items
 		display: flex
 		align-items: center
 		justify-content: space-between
 		width: 100%
-		background: #FFA902
+
 		padding-top: 61px
 		padding-left: 30px
 		padding-right: 47px
@@ -50,51 +51,40 @@
 @media only screen and (max-width: 1399px)
 	.footer
 		&-references
-			display: block
-			width: 100%
-			padding-right: 20px
+			width: 386px
 		&-icons
-			padding-left: 150px
+			width: 149px
+@media only screen and (max-width: 1199px)
+	.footer
+		&-references
 			display: block
-
+			width: 190px
+		&-icons
+			display: block
 @media only screen and (max-width: 991px)
 	.footer
-	
+		&-icons
+			padding-top: 20px
+		&-items
+			flex-wrap: wrap
 @media only screen and (max-width: 767px)
 	.footer
 
 @media only screen and (max-width: 870px)
 	.footer
-		&-right
-			margin: 0 auto
-			padding-top: 20px
-			justify-content: space-around
-		&-left
-			justify-content: center
-		&-items
-			display: block
-		&-icons
-			display: block
-			padding-left: 0
 
 @media only screen and (max-width: 575px)
 	.footer
-		&-left
-			justify-content: flex-start
 		&-copyright
 			font-size: 20px
-		&-right
-			margin: auto 0
-			max-width: 200px
-			display: block
-		&-icons
-			max-width: 100px
-			margin: 0 auto
-			padding-top: 20px
 @media only screen and (max-width: 480px)
 	.footer
 		&-copyright
 			font-size: 18px
+@media only screen and (max-width: 480px)
+	.footer
+		&-references
+			padding-top: 20px
 @media only screen and (max-width: 403px)
 	.footer
 		&-copyright
