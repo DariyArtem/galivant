@@ -62,8 +62,8 @@ function compileSass(done) {
 // 	.pipe(
 // 		jade2({
 // 			pretty: true
-// 		}).on('error', notify.onError(function (error) {
-// 			return 'An error occurred while compiling jade.\nLook in the console for details.\n' + error;
+// 		}).on('errorPage', notify.onError(function (errorPage) {
+// 			return 'An errorPage occurred while compiling jade.\nLook in the console for details.\n' + errorPage;
 // 		}))
 // 	)
 //     .pipe(gulp.dest('app'))

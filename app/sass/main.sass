@@ -5,8 +5,11 @@
 
 @import "header"
 @import "footer"
-@import "home/home"
-@import "aboutMe/all"
+@import "homePage/home"
+@import "aboutMePage/about"
+@import "followMePage/all"
+@import "errorPage/error"
+@import "categoryPage/categoryPage"
 
 @import "components"
 @import "sections/sections"
@@ -33,8 +36,7 @@ a
   height: 100vh
 .content
   &-title
-    padding-top: 100px
-    margin: 0 auto
+    margin: 100px auto 0
     text-align: center
     font-family: 'Poppins', sans-serif
     font-weight: 600
@@ -76,11 +78,12 @@ a
     width: 100%
     height: 221px
     img
-      border-radius: 25px
+      border-radius: 10px
       height: 100%
       width: 100%
       object-fit: cover
 .pagination
+  padding-bottom: 100px
   padding-top: 50px
 
 @media only screen and (max-width: 1920px)
@@ -89,47 +92,21 @@ a
   .inactive
     display: block
 @media only screen and (max-width: 1919px)
-
-  .instagram
-    &-inactive
-      display: none
-    &-photos
-      justify-content: space-around
+  .container
 @media only screen and (max-width: 1599px)
   .container
     max-width: 976px
 @media only screen and (max-width: 1399px)
-  //.explores
-    &-title
-      font-size: 14px
-    &-context
-      font-size: 12px
-    &-category
-      font-size: 11px
   .container
     max-width: 854px
 
 @media only screen and (max-width: 1199px)
-  //.explores
-    &-title
-      font-size: 12px
-    &-context
-      font-size: 10px
-    &-category
-      font-size: 9px
   .container
     max-width: 732px
 @media only screen and (max-width: 991px)
 
   .swiper-button-next, .swiper-button-prev
     display: none
-  //.explores
-    &-title
-      font-size: 10px
-    &-context
-      font-size: 8px
-    &-category
-      font-size: 7px
   .container
     max-width: 605px
 @media only screen and (max-width: 767px)

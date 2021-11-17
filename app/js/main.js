@@ -1,5 +1,5 @@
 $(document).ready(function (){
-	let video1 = $('#home-video1')[0];
+	let video1 = $('#homePage-video1')[0];
 	let videoFile = $('.video-file');
 	let videoContent = $(".video-content");
 	let background = $(".video-background");
