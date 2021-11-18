@@ -15,11 +15,10 @@ $(document).ready(function (){
 			opacity: 1,
 		},500);
 		$('.video-close').animate({
-			opacity: 0.7,
+			top: 0,
+			opacity: 1,
 		}, 500);
 		video1.play();
-		$("#close-video1").animate(function (){
-		})
 	})
 
 	$(".video-close").click(function (){

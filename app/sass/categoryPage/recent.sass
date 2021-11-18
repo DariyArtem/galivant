@@ -39,7 +39,7 @@
     font-weight: 400
     color: #868383
   &-hr
-    width: 31px
+    width: 28px
     border: 0.5px solid #868383
   &-comment
     font-family: Poppins, sans-serif
@@ -48,3 +48,23 @@
     color: #FFA902
     &:hover
       color: #141414
+@media only screen and (max-width: 1599px)
+  .recent
+    &-hr
+      width: 25px
+@media only screen and (max-width: 1399px)
+  .recent
+    &-date
+      font-size: 10px
+    &-comment
+      font-size: 10px
+    &-hr
+      width: 25px
+@media only screen and (max-width: 1199px)
+  .recent
+    &-date
+      font-size: 12px
+    &-comment
+      font-size: 12px
+    &-hr
+      width: 28px
