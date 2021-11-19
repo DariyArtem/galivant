@@ -3,18 +3,28 @@
 @import "variables"
 @import "typography"
 
-@import "header"
-@import "footer"
-@import "homePage/home"
-@import "aboutMePage/about"
-@import "followMePage/all"
-@import "errorPage/error"
-@import "categoryPage/categoryPage"
-@import "searchPage/search"
-@import "SinglePostPage/SinglePost"
-
-@import "components"
-@import "sections/sections"
+@import "sections/explores"
+@import "sections/footer"
+@import "sections/form"
+@import "sections/about"
+@import "sections/blog"
+@import "sections/instagram"
+@import "sections/example"
+@import "sections/cards_aboutMePage"
+@import "sections/category"
+@import "sections/page"
+@import "sections/post"
+@import "sections/recent"
+@import "sections/video"
+@import "sections/slider"
+@import "sections/sidebar"
+@import "sections/search"
+@import "sections/header"
+@import "components/notification"
+@import "components/proposition"
+@import "single"
+@import "swiper"
+@import "error"
 
 a
   color: #fff
@@ -43,20 +53,8 @@ a
     font-family: 'Poppins', sans-serif
     font-weight: 600
     font-size: 36px
-.swiper
-  height: 300px
 .position-relative
   padding-top: 50px
-.swiper-button-next
-  top: 48%
-  right: -78px
-  display: block
-.swiper-button-prev
-  top: 48%
-  left: -98px
-  display: block
-.swiper-button-next:after, .swiper-button-prev:after
-  content: none
 .centered
   width: 100%
   text-align: center
@@ -69,21 +67,7 @@ a
   top: 37%
   left: 53%
   transform: translate(-50%, -50%)
-.swiper-pagination-bullet
-  width: 18px
-  height: 18px
-.slider
-  &-card
-    cursor: pointer
-  &-img
-    position: relative
-    width: 100%
-    height: 221px
-    img
-      border-radius: 10px
-      height: 100%
-      width: 100%
-      object-fit: cover
+
 .pagination
   padding-bottom: 100px
   padding-top: 50px
