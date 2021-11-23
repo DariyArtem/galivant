@@ -40,15 +40,15 @@ $(document).ready(function (){
 
 	$(".header-burger").click(function (){
 		$(".header-sidebar").animate({
-			width: '220px',
-		}, 750)
+			width: '100vw',
+		}, 550)
 
 	})
 
 	$(".header-closeSidebar").click(function (){
 		$(".header-sidebar").animate({
 			width: '0px',
-		}, 750)
+		}, 550)
 	})
 
 	$(".header-sidebarSearch").click(function (){

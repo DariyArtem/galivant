@@ -6,7 +6,7 @@
 @import "sections/explores"
 @import "sections/footer"
 @import "sections/form"
-@import "sections/about"
+@import "sections/aboutPage"
 @import "sections/blog"
 @import "sections/instagram"
 @import "sections/example"
@@ -22,6 +22,9 @@
 @import "sections/header"
 @import "components/notification"
 @import "components/proposition"
+@import "components/icon"
+@import "components/pagination"
+@import "components/close"
 @import "single"
 @import "swiper"
 @import "error"
@@ -48,13 +51,13 @@ a
   height: 100vh
 .content
   &-title
-    margin: 100px auto 0
+    margin: 0 auto 50px
     text-align: center
     font-family: 'Poppins', sans-serif
     font-weight: 600
     font-size: 36px
 .position-relative
-  padding-top: 50px
+  padding-top: 100px
 .centered
   width: 100%
   text-align: center
@@ -67,10 +70,6 @@ a
   top: 37%
   left: 53%
   transform: translate(-50%, -50%)
-
-.pagination
-  padding-bottom: 100px
-  padding-top: 50px
 
 @media only screen and (max-width: 1920px)
   .container
