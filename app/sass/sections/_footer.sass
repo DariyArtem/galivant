@@ -66,10 +66,18 @@
 			display: block
 @media only screen and (max-width: 991px)
 	.footer
-		&-icons
-			padding-top: 20px
+		&-copyright, &-menu, &-references, &-icons
+			width: 100%
 		&-items
-			flex-wrap: wrap
+			width: 511px
+			margin: 0 auto
+			text-align: center
+			display: block
+		&-icons
+			margin-top: 60px
+			display: flex
+		li
+			padding-top: 30px
 @media only screen and (max-width: 767px)
 	.footer
 
@@ -78,21 +86,7 @@
 
 @media only screen and (max-width: 575px)
 	.footer
+		&-items
+			width: 275px
 		&-copyright
-			font-size: 20px
-@media only screen and (max-width: 480px)
-	.footer
-		&-copyright
-			font-size: 18px
-@media only screen and (max-width: 480px)
-	.footer
-		&-references
-			padding-top: 20px
-@media only screen and (max-width: 403px)
-	.footer
-		&-copyright
-			font-size: 14px
-@media only screen and (max-width: 329px)
-	.footer
-		&-copyright
-			font-size: 12px
+			display: none

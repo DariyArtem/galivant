@@ -1,12 +1,6 @@
 .single
-  &-img
-    width: 100%
-    height: 438px
-    img
-      height: 100%
-      width: 100%
-      object-fit: cover
-      border-radius: 20px
+  &-top
+    margin-top: 50px
   &-title
     padding: 50px 0 50px 0
     font-family: Poppins, sans-serif
@@ -20,13 +14,14 @@
     width: 100%
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
   &-data
     flex-wrap: wrap
     max-width: 430px
     width: 100%
     display: flex
     justify-content: space-between
-  &-text
+  &-text, &-shortDescription
     line-height: 196.3%
     font-family: Poppins, sans-serif
     font-style: normal
@@ -34,6 +29,8 @@
     font-size: 15px
     color: #696969
   &-notification
+    display: flex
+    align-items: center
     margin: 30px 0 51px 0
     background: #FFF1D4
     border-radius: 10px
@@ -79,6 +76,7 @@
       width: 100%
       height: 100%
   &-reference
+    white-space: pre-line
     color: #141414
     &:hover
       color: #FFA902
@@ -94,12 +92,7 @@
     max-width: 153px
     a
       background: #FFF1D4
-  &-name
-    font-family: Poppins, sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    color: #141414
+
   &-function
     padding-bottom: 11px
     font-family: Poppins, sans-serif
@@ -114,24 +107,10 @@
     font-weight: 400
     font-size: 15px
     color: #141414
-  &-photoComment
-    width: 82px
-    height: 82px
-    img
-      position: relative
-      width: 100%
-      height: 100%
+
   &-comments
     padding-top: 30px
-  &-comment
-    line-height: 196.3%
-    font-family: Poppins, sans-serif
-    font-style: normal
-    font-weight: 400
-    font-size: 15px
-    color: #696969
-    padding-top: 14px
-    padding-bottom: 10px
+
 
 @media only screen and (max-width: 1919px)
   .single
@@ -141,7 +120,7 @@
   .single
     &-info
       justify-content: center
-      flex-wrap: wrap
+
     &-button
       width: 626px
       height: 352px

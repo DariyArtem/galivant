@@ -2,7 +2,7 @@ let swiper = new Swiper(".mySwiper", {
 
     slidesPerView: 1,
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerGroup: 6,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -16,26 +16,68 @@ let swiper = new Swiper(".mySwiper", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 1,
-            spaceBetween: 10
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3
+        },
+        // when window width is >= 575px
+        575: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3
+        },
+        1199: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            slidesPerGroup: 6
+        }
+    }
+});
+let instSwiper = new Swiper(".instagramSwiper", {
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 6,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
         },
         // when window width is >= 480px
         480: {
             slidesPerView: 2,
-            spaceBetween: 30
+            spaceBetween: 21,
+            slidesPerGroup: 2
         },
-        // when window width is >= 640px
-        640: {
+        // when window width is >= 575px
+        767: {
             slidesPerView: 3,
-            spaceBetween: 40
+            spaceBetween: 21,
+            slidesPerGroup: 3
         },
         1199: {
-            slidesPerView: 4,
-            spaceBetween: 30
+            slidesPerView: 3,
+            spaceBetween: 21,
+            slidesPerGroup: 3
         },
         1399: {
-            slidesPerView: 6,
-            spaceBetween: 30
-        }
+            slidesPerView: 5,
+            spaceBetween: 21,
+            slidesPerGroup: 5
+        },
     }
 });

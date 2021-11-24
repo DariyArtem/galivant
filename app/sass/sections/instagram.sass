@@ -25,7 +25,8 @@
     font-weight: 600
     color: #141414
   &-reference
-    padding-top: 3px
+    margin-bottom: 50px
+    margin-top: 3px
     text-align: center
   &-ref
     font-family: Poppins, sans-serif
@@ -34,6 +35,14 @@
     color: #FFA902
 @media only screen and (max-width: 1919px)
   .instagram
+    &-inactive
+      display: none
+    &-photos
+      justify-content: space-around
+@media only screen and (max-width: 768px)
+  .instagram
+    &-reference
+      margin-bottom: 30px
     &-inactive
       display: none
     &-photos

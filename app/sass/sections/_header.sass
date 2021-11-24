@@ -218,29 +218,33 @@
 			font-size: 30px
 @media only screen and (max-width: 767px)
 	.header
+		&-title
+			font-weight: 400
+			font-size: 45px
+			text-align: left
+		&-description
+			text-align: left
 		&-other
 			padding-top: 20px
 		&-row
-
 			display: flex
 		&-search
 			width: 400px
 
-@media only screen and (max-width: 575px)
+@media only screen and (max-height: 1000px)
 	.header
-		&-title
-			font-size: 36px
-			padding-top: 80px
-		&-description
-			font-size: 12px
-		&-subtitle
-			font-size: 24px
-@media only screen and (max-width: 480px)
+		&-content
+			height: 800px
+@media only screen and (max-height: 900px)
 	.header
-		&-title
-			font-size: 30px
-			padding-top: 80px
-		&-description
-			font-size: 10px
-		&-subtitle
-			font-size: 18px
+		&-content
+			height: 700px
+@media only screen and (max-height: 800px)
+	.header
+		&-content
+			height: 600px
+@media only screen and (max-height: 650px)
+	.header
+		&-content
+			height: 450px
+
