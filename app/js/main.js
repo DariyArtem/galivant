@@ -1,5 +1,5 @@
 $(document).ready(function (){
-	let video1 = $('#homePage-video1')[0];
+	let video1 = $('#video1')[0];
 	let videoFile = $('.video-file');
 	let videoContent = $(".video-content");
 	let background = $(".video-background");
@@ -7,6 +7,7 @@ $(document).ready(function (){
 		videoContent.animate({
 			opacity: 0
 		},500);
+		videoContent.css('display', 'none')
 		background.animate({
 			opacity: 0
 		},500);
@@ -25,6 +26,7 @@ $(document).ready(function (){
 		videoContent.animate({
 			opacity: 1
 		},500);
+		videoContent.css('display', 'block')
 		background.animate({
 			opacity: 1
 		},500);

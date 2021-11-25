@@ -4,12 +4,28 @@
 	font-family: "Poppins", sans-serif
 	color: #fff
 	font-size: 24px
-	margin-top: 101px
+	margin-top: 100px
+	&-homePage
+		background: #FFA902
+		width: 100%
+		font-family: "Poppins", sans-serif
+		color: #fff
+		font-size: 24px
+		margin-top: 101px
+	&-errorPage
+		background: #FFA902
+		width: 100%
+		font-family: "Poppins", sans-serif
+		color: #fff
+		font-size: 24px
+		margin-top: 162px
 	&-menu
 		font-family: Poppins,sans-serif
 		font-size: 20px
 		color: #fff
+		margin-left: 201px
 	&-icons
+		margin-left: 432px
 		width: 189px
 		display: flex
 		justify-content: space-between
@@ -32,7 +48,7 @@
 			.icon
 				color: #FFA902
 	&-copyright
-		width: 500px
+		width: 445px
 	&-references
 		width: 516px
 		display: flex
@@ -45,30 +61,47 @@
 		align-items: center
 		justify-content: space-between
 		width: 100%
-
-		padding-top: 61px
-		padding-left: 30px
-		padding-right: 47px
-		padding-bottom: 47px
-
-@media only screen and (max-width: 1399px)
+		padding: 61px 70px 47px 67px
+@media only screen and (max-width: 1799px)
 	.footer
-		&-references
-			width: 386px
+		&-copyright
+			font-size: 20px
 		&-icons
-			width: 149px
-@media only screen and (max-width: 1199px)
+			margin-left: 332px
+@media only screen and (max-width: 1699px)
+	.footer
+		&-icons
+			margin-left: 280px
+@media only screen and (max-width: 1599px)
 	.footer
 		&-references
 			display: block
 			width: 190px
 		&-icons
+			margin-left: 320px
+			display: block
+@media only screen and (max-width: 1399px)
+	.footer
+		&-icons
+			margin-left: 290px
+			display: block
+@media only screen and (max-width: 1199px)
+	.footer
+		&-icons
+			margin-left: 250px
+			display: block
+@media only screen and (max-width: 1099px)
+	.footer
+		&-icons
+			margin-left: 220px
 			display: block
 @media only screen and (max-width: 991px)
 	.footer
 		&-copyright, &-menu, &-references, &-icons
 			width: 100%
+			margin: 0
 		&-items
+			padding: 61px 70px 47px 70px
 			width: 511px
 			margin: 0 auto
 			text-align: center
